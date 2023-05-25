@@ -11,6 +11,10 @@
 		6227061A2A20065600402F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622706192A20065600402F49 /* ContentView.swift */; };
 		6227061C2A20065700402F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6227061B2A20065700402F49 /* Assets.xcassets */; };
 		6227061F2A20065700402F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6227061E2A20065700402F49 /* Preview Assets.xcassets */; };
+		622706272A2009B200402F49 /* statusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622706262A2009B200402F49 /* statusMenu.swift */; };
+		6227062A2A200A0600402F49 /* MountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622706292A200A0600402F49 /* MountsView.swift */; };
+		6227062C2A200A2400402F49 /* ts_mount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227062B2A200A2400402F49 /* ts_mount.swift */; };
+		6227062E2A200C3300402F49 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6227062D2A200C3300402F49 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		6227061B2A20065700402F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6227061E2A20065700402F49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		622706202A20065700402F49 /* share_mount.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = share_mount.entitlements; sourceTree = "<group>"; };
+		622706262A2009B200402F49 /* statusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusMenu.swift; sourceTree = "<group>"; };
+		622706292A200A0600402F49 /* MountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountsView.swift; sourceTree = "<group>"; };
+		6227062B2A200A2400402F49 /* ts_mount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ts_mount.swift; sourceTree = "<group>"; };
+		6227062D2A200C3300402F49 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6227062F2A200C5F00402F49 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +45,8 @@
 		6227060B2A20065600402F49 = {
 			isa = PBXGroup;
 			children = (
+				6227062F2A200C5F00402F49 /* README.md */,
+				6227062D2A200C3300402F49 /* LICENSE */,
 				622706162A20065600402F49 /* share-mount */,
 				622706152A20065600402F49 /* Products */,
 			);
@@ -52,11 +63,14 @@
 		622706162A20065600402F49 /* share-mount */ = {
 			isa = PBXGroup;
 			children = (
+				622706282A2009EF00402F49 /* mounts */,
+				622706262A2009B200402F49 /* statusMenu.swift */,
 				622706172A20065600402F49 /* share_mountApp.swift */,
 				622706192A20065600402F49 /* ContentView.swift */,
 				6227061B2A20065700402F49 /* Assets.xcassets */,
 				622706202A20065700402F49 /* share_mount.entitlements */,
 				6227061D2A20065700402F49 /* Preview Content */,
+				6227062B2A200A2400402F49 /* ts_mount.swift */,
 			);
 			path = "share-mount";
 			sourceTree = "<group>";
@@ -67,6 +81,14 @@
 				6227061E2A20065700402F49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		622706282A2009EF00402F49 /* mounts */ = {
+			isa = PBXGroup;
+			children = (
+				622706292A200A0600402F49 /* MountsView.swift */,
+			);
+			path = mounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6227062E2A200C3300402F49 /* LICENSE in Resources */,
 				6227061F2A20065700402F49 /* Preview Assets.xcassets in Resources */,
 				6227061C2A20065700402F49 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6227062A2A200A0600402F49 /* MountsView.swift in Sources */,
+				622706272A2009B200402F49 /* statusMenu.swift in Sources */,
+				6227062C2A200A2400402F49 /* ts_mount.swift in Sources */,
 				6227061A2A20065600402F49 /* ContentView.swift in Sources */,
 				622706182A20065600402F49 /* share_mountApp.swift in Sources */,
 			);
@@ -274,6 +300,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
